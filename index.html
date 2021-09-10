@@ -9,10 +9,44 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8822c96398.js" crossorigin="anonymous"></script>
 <style>
     .perfil-photo {
-        height: ;
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        border-radius: 50%; }
+    .primaryColor {
+       background-color: black;
+     }
+    .secundaryColor {
+      background-color: yellow;
     }
+    p {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black !important;
+    }
+    .icons {
+      padding-left:5px;
+    }
+    .whiteTitle {
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+    }
+
+    .greenTitle {
+      text-decoration: underline;
+      text-underline-position: below;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #18bc9c;
+    }
+
 </style>
 </head>
 <body>
@@ -30,15 +64,81 @@
           </ul>
         </div>
       </nav>
-      <section class="jumbotron text-center">
+
+      <section class="jumbotron text-center primaryColor">
         <div class="container">
-            <a href="https://ibb.co/d2Sw9Q2"><img src="https://i.ibb.co/d2Sw9Q2/leandro-De-Sousa.jpg" alt="leandro-De-Sousa" border="0"></a>
-          <h1 class="jumbotron-heading">Leandro de Sousa</h1>
-          <p class="lead text-muted">Testando minha descrição</p>
+          <img class="perfil-photo" src="https://i.ibb.co/d2Sw9Q2/leandro-De-Sousa.jpg" alt="">
+          <h1 class="jumbotron-heading whiteTitle">Leandro de Sousa</h1>
+          <p class="lead text-muted whiteTitle">Testando minha descrição</p>
           <p>
             <a href="#" class="btn btn-dark my-2">Contato</a>
           </p>
+          <a href="https://www.linkedin.com/in/leandrodesousadesenvolvedorios/"> <i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/leandrodesousa-dev"><i class="fab fa-github"></i></a>
         </div>
       </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h2 class="jombotron text-center">Projetos</h2>
+            <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://i.ibb.co/d2Sw9Q2/leandro-De-Sousa.jpg">
+                <div class="card-body">
+                  <p class="card-text">Descrição 1.</p>
+                    <ul>
+                      <li>Teste 1</li>
+                      <li>Teste 2</li>
+                      <li>Teste 3</li>
+                    </ul>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://i.ibb.co/d2Sw9Q2/leandro-De-Sousa.jpg">
+                <div class="card-body">
+                <p class="card-text">Descrição 2.</p>
+                <ul>
+                  <li>Teste 1</li>
+                  <li>Teste 2</li>
+                  <li>Teste 3</li>
+                </ul>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sobre Mim -->
+      <section class="jumbotron text-center" style="background-color: white;">
+          <div class="container">
+              <h2 class="jumbotron heanding" style="background-color: white;">Sobre Mim</h2>
+              <p class="lead"> Descrição Sobre Mim</p>
+          </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="text-center">
+        <p>Copryright 2021 leandrodesousa.dev</p>
+      </footer>
 </body>
 </html>
